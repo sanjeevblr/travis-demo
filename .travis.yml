@@ -8,6 +8,7 @@ before_cache:
   - rm -fr $HOME/.gradle/caches/*/scripts/
 before_install:
   - pwd
+  - echo $PWD
   - docker build -t travis-demo .
   - docker ps -a
 
