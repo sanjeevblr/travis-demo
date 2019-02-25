@@ -7,6 +7,7 @@ before_cache:
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
   - rm -fr $HOME/.gradle/caches/*/scripts/
 before_install:
+  - pwd
   - docker build -t travis-demo .
   - docker ps -a
 
