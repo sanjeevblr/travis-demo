@@ -9,7 +9,7 @@ before_cache:
 before_install:
   - pwd
   - echo $PWD
-  - docker build -t travis-demo .
+  - docker build -t travis-demo $PWD
   - docker ps -a
 
 cache:
